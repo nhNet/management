@@ -1,5 +1,5 @@
 // Types of content
 var defaultContent = {
   this.contentName = "default",
-  this.content = "https://nhnet.github.io/logincodeanimation/"
+  this.contentLink = "https://nhnet.github.io/logincodeanimation/"
 }
