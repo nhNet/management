@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                text-align:center;
+                background:black;
+                color:white;
+            }
+            audio{
+                width:70%;
+                background:black;
+                border-radius:20px;
+            }
+            .slidecontainer {
+                text-align:center;
+                margin-left:15%;
+                width: 70%;
+            }
+            
+            .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 25px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+            }
+            
+            .slider:hover {
+                opacity: 1;
+            }
+            
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 25px;
+                background: #4CAF50;
+                cursor: pointer;
+            }
+            
+            .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                background: #4CAF50;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <u>
+            <h1 style="text-align:center;">Over the Horizon Evolution</h1>
+            <div class="slidecontainer">
+                <p>Speed: x<span id="speed"></span></p>
+              <input type="range" min="25" max="125" value="50" class="slider" id="myRange">
+            </div>
+            <div class="slidecontainer">
+              <p>Master Volume:</p>
+              <input type="range" min="0" max="100" value="100" class="slider" id="myVolRange">
+            </div>
+            
+            <h2>2011</h2>
+            <audio id="2011" src="audio/OverTheHorizon2011.mp3" controls></audio><br>
+            <h2>2012</h2>
+            <audio id="2012" src="audio/OverTheHorizon2012.mp3" controls></audio><br>
+            <h2>2013</h2>
+            <audio id="2013" src="audio/OverTheHorizon2013.mp3" controls></audio><br>
+            <h2>2015</h2>
+            <audio id="2015" src="audio/OverTheHorizon2015.mp3" controls></audio><br>
+            <h2>2017</h2>
+            <audio id="2017" src="audio/OverTheHorizon2017.mp3" controls></audio><br>
+            <h2>2018</h2>
+            <audio id="2018" src="audio/OverTheHorizon2018.mp3" controls></audio><br>
+        </u>
+        <script>
+        var speed = document.getElementById("myRange");
+        var vol = document.getElementById("myVolRange");
+        var output = document.getElementById("speed");
+        output.innerHTML = speed.value/50;
+        
+        speed.oninput = function() {
+          output.innerHTML = this.value/50;
+          document.getElementById("2011").playbackRate=this.value/50;
+          document.getElementById("2012").playbackRate=this.value/50;
+          document.getElementById("2013").playbackRate=this.value/50;
+          document.getElementById("2015").playbackRate=this.value/50;
+          document.getElementById("2017").playbackRate=this.value/50;
+          document.getElementById("2018").playbackRate=this.value/50;
+        }
+        vol.oninput = function() {
+          document.getElementById("2011").volume=this.value/100;
+          document.getElementById("2012").volume=this.value/100;
+          document.getElementById("2013").volume=this.value/100;
+          document.getElementById("2015").volume=this.value/100;
+          document.getElementById("2017").volume=this.value/100;
+          document.getElementById("2018").volume=this.value/100;
+        }
+        </script>
+    </body>
+</html>
