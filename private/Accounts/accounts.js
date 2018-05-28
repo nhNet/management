@@ -52,6 +52,7 @@ var proAccounts = [
 	"constanza.par.hor@kcpupils.org",
 	"beatriz.tay.rod@kcpupils.org",
 	"gonzalo.agu.lag@kcpupils.org",
+	"matan.kes@kcpupils.org",
 	"ahmed.fte@kcpupils.org",
 	"pedrotomas.cob.agu@kcpupils.org",
 	"juanpablo.bis@kcpupils.org",
