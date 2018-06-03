@@ -3,8 +3,5 @@
 // These will give data for the images that will show up...
 
 var NH_NET_AccessTokens = {
-	spbong999 : {
-		token : "2332206178.1677ed0.cdf2a78e521849a7b980459a3d8bf4b9",
-		email : "spbong999@gmail.com"
-	}
+	spbong999 : "spbong999@gmail.com___2332206178.1677ed0.cdf2a78e521849a7b980459a3d8bf4b9"
 };
