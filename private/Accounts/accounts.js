@@ -40,7 +40,8 @@ var allAccounts = [
 	"marcos.car.val@kcpupils.org",
 	"victor.arr.mar@kcpupils.org",
 	"mrpekka740@gmail.com",
-	"rodrigo.alv.bor@kcpupils.org"
+	"rodrigo.alv.bor@kcpupils.org",
+	"rodrigo.dez.per@kcpupils.org"
 ];
 
 // If you name all the Pro accounts the only ones remaining will be the basic. Get it?
@@ -48,6 +49,7 @@ var allAccounts = [
 var proAccounts = [
 	"spbong999@gmail.com",
 	"antonio.sie.per@kcpupils.org",
+	"rodrigo.dez.per@kcpupils.org",
 	"lucasgabriel.sal.bev@kcpupils.org",
 	"nathan.wal.san@kcpupils.org",
 	"inigo.agu.viy@kcpupils.org",
