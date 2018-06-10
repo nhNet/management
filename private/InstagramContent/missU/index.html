@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+			    font-family: 'Oswald', sans-serif;
+			    background:black;
+			    color:white;
+			    text-align:center;
+			    overflow:hidden;
+			}
+			h1{
+			      font-size:80px;
+			}
+
+			p{
+			    font-size:50px;
+			}
+	        </style>
+		<meta name="viewport" content="width=device-width" initial-scale="1">
+	        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<!-- Importing NH Net Google SignIn -->
+		<meta name="google-signin-scope" content="profile email">
+		<meta name="google-signin-client_id" content="398993796104-lq9k21a411mnehe5p94brocp3rs72dr5.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<!-- Finished importing HuamanScripts -->
+	</head>
+	<body>
+		<h1><img style="background:White;border-radius:50px;" width="80px" src="https://image.flaticon.com/icons/png/512/12/12195.png">&nbsp;NH Net Browser</h1>
+    		<p>NH Net needs you to sign in, as this is private content...</p>
+		<!-- This is the SignIn button from the NH Net API -->
+		<div style="margin-left:100px;" class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onFail">
+		<!-- This is the end of the SignIn button from the NH Net API -->
+		<p id="oops"></p>
+		<script>
+			// Nicholas Huaman 2018
+
+			// If someone didn't complete the sign-in correctly, then something ought to happen!
+			// This code is then executed.
+
+			function onFail(){
+			      document.querySelector("#oops").innerHTML="<h2 style="color:red;">Oops... Something went wrong there...</h2><h2 style="color:red;">Try again!</h2>";
+			}
+
+			// Here is what happens when Google Signs u in correctly.
+			function onSignIn(googleUser) {
+			      // Refer to Google using this variable. This is the base for the useful variables for code users.
+			      var profile = googleUser.getBasicProfile();
+			      // Name Google User Variables for future use!
+			      var profileImg = profile.getImageUrl();
+			      var profileName = profile.getName();
+			      var profileEmail = profile.getEmail();
+			      if (profileEmail==="esme.lam@kcpupils.org" || profileEmail==="nicholas.hua@kcpupils.org"){      
+			      		
+			      }else{
+				   document.body.innerHTML="<h1><img style="background:White;border-radius:50px;" width="80px" src="https://image.flaticon.com/icons/png/512/12/12195.png">&nbsp;NH Net Browser</h1><br><h1 id="man" style="transform:rotate(90deg);">(: ( )</h1><p>You are trying to view content that isn't for you.</p><p>Go back to what you should be doing and not trying to nose into things that aren't for you...</p><script>MoveMan();setInterval(MoveMan, 2000);function MoveMan(){setTimeout(function(){document.getElementById("man").innerHTML="(: ()"; /*Close mouth*/},0);setTimeout(function(){document.getElementById("man").innerHTML="(: ( )"; /*Open mouth*/},1000);}</script>";
+			      }
+			}
+			// That's all folks!
+			// Thank you for using my code.
+			// Nicholas Huaman 2018
+		</script>
+	</body>
