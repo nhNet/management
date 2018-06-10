@@ -29,7 +29,7 @@
 		<h1><img style="background:White;border-radius:50px;" width="80px" src="https://image.flaticon.com/icons/png/512/12/12195.png">&nbsp;NH Net Browser</h1>
     		<p>NH Net needs you to sign in, as this is private content...</p>
 		<!-- This is the SignIn button from the NH Net API -->
-		<div style="text-align:center;"><div class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onFail"></div></div>
+		<div id="sign-in-button" style="text-align:center;"></div>
 		<!-- This is the end of the SignIn button from the NH Net API -->
 		<p id="oops"></p>
 		<script>
@@ -37,7 +37,7 @@
 
 			// If someone didn't complete the sign-in correctly, then something ought to happen!
 			// This code is then executed.
-
+			document.getElementById("sign-in-button").innerHTML='<div style="margin-left:'+window.innerWidth/2+'px;" class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onFail"></div>';
 			function onFail(){
 			      document.getElementById("oops").innerHTML='<h2 style="color:red;">Oops... Something went wrong there...</h2><h2 style="color:red;">Try again!</h2>';
 			}
