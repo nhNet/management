@@ -1,0 +1,3 @@
+// Nicholas Huaman 2018
+// Code to implement the Google sign in button...
+	document.getElementById("sign-in-button").innerHTML='<div style="margin-left:'+(window.innerWidth/64)*22+'px;" class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onFail"></div>';
