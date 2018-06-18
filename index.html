@@ -75,7 +75,7 @@
             <h2>2018</h2>
             <audio id="2018" src="audio/OverTheHorizon2018.mp3" controls></audio><br>
             <h2>NH Net Browser Arrangement</h2>
-            <audio id="2015" src="audio/Over%20The%20Horizon%20Arr..mp3" controls></audio><br>
+            <audio id="Arr" src="audio/Over%20The%20Horizon%20Arr..mp3" controls></audio><br>
         </u>
         <script>
         var speed = document.getElementById("myRange");
@@ -91,6 +91,7 @@
           document.getElementById("2015").playbackRate=this.value/50;
           document.getElementById("2017").playbackRate=this.value/50;
           document.getElementById("2018").playbackRate=this.value/50;
+          document.getElementById("Arr").playbackRate=this.value/50;
         }
         vol.oninput = function() {
           document.getElementById("2011").volume=this.value/100;
@@ -99,6 +100,7 @@
           document.getElementById("2015").volume=this.value/100;
           document.getElementById("2017").volume=this.value/100;
           document.getElementById("2018").volume=this.value/100;
+          document.getElementById("Arr").volume=this.value/100;
         }
         </script>
     </body>
