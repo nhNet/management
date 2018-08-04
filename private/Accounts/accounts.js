@@ -7,9 +7,8 @@
 
 var allAccounts = [
 	"spbong999@gmail.com",
-// 	"nicholashuaman@gmail.com",
- 	"nicholas.hua@kcpupils.org"//,
-	/*"nicolas.elm.gar@kcpupils.org",
+ 	/*"nicholas.hua@kcpupils.org"/*,
+	"nicolas.elm.gar@kcpupils.org",
 	"kayla.de.bru@kcpupils.org",
 	"maria.men.man@kcpupils.org",
 	"pedrotomas.cob.agu@kcpupils.org",
@@ -51,8 +50,8 @@ var allAccounts = [
 
 var proAccounts = [
 	"spbong999@gmail.com",
-	"nicholas.hua@kcpupils.org"/*,
-	/*"antonio.sie.per@kcpupils.org",
+	/*"nicholas.hua@kcpupils.org"/*,
+	"antonio.sie.per@kcpupils.org",
 	"rodrigo.dez.per@kcpupils.org",
 	"kayla.de.bru@kcpupils.org",
 	"lucasgabriel.sal.bev@kcpupils.org",
